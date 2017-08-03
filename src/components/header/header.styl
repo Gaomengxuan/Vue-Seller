@@ -1,0 +1,194 @@
+.header
+  position relative
+  color #fff
+  overflow hidden
+  blur 10px
+  background rgba(7,17,27,.5)
+  .content-wrapper
+    position relative
+    display flex
+    padding 24px 12px 18px 24px
+    font-size 12px
+    .avatar
+      img
+        border-radius 2px
+    .content
+      margin-left 16px
+      .title
+        margin 2px 0 8px 0
+        font-size 16px
+        .brand
+          display inline-block
+          width 30px
+          height 18px
+          vertical-align top
+          bg-image('brand')
+          background-size 30px 18px
+          background-repeat no-repeat
+        .name
+          margin-left 6px
+          font-size 16px
+          line-height 18px
+          font-weight bold
+      .descrition
+        font-size 12px
+        margin-bottom 10px
+      .supports
+        .icon
+          display inline-block
+          margin-right 4px
+          vertical-align top
+          width 12px
+          height 12px
+          background-size 12px 12px
+          background-repeat no-repeat
+          &.decrease
+            bg-image('decrease_1')
+          &.discount
+            bg-image('discount_1')
+          &.special
+            bg-image('special_1')
+          &.invoice
+            bg-image('invoice_1')
+          &.guarantee
+            bg-image('guarantee_1')
+        .text
+          line-height 12px
+          font-size 10px
+    .support-count
+      position absolute
+      bottom 18px
+      right 12px
+      padding 0 8px
+      height 24px
+      line-height 24px
+      text-align center
+      border-radius 14px
+      background rgba(0,0,0,.2)
+      .count
+        vertical-align top
+        font-size 10px
+      .icon-keyboard_arrow_right
+        magin-left 10px
+        font-size 10px
+        line-height 24px
+  .bulletin-wrapper
+    position relative
+    height 28px
+    line-height 28px
+    padding 0 22px 0 12px
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+    background rgba(7,17,27,.0)
+    .bulletin-title
+      display inline-block
+      vertical-align top
+      margin-top 8px
+      width 22px
+      height 12px
+      bg-image('bulletin')
+      background-size 100% 100%
+      background-repeat no-repeat
+    .bulletin-text
+      line-height 12px
+      font-size 10px
+      margin 0 4px
+    .icon-keyboard_arrow_right
+      position absolute
+      right 12px
+      top 8px
+      font-size 10px
+  .background
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    filter blur(10px)
+    z-index -1
+  .detail
+    position fixed
+    top 0
+    left 0
+    z-index 100
+    width 100%
+    height 100%
+    background rgba(7,17,27,.7)
+    backdrop-filter blur(10px)
+    .detail-wrapper
+      width 100%
+      min-height 100%
+      .detail-main
+        margin-top 64px
+        padding-bottom 64px
+        .name
+          font-size 16px
+          font-weight 700
+          width 100%
+          line-height 16px
+          color rgb(255,255,255)
+          text-align center
+        .star-wrapper
+          margin 16px 11px 28px 0
+          text-align center
+        .title
+          display flex
+          width 80%
+          margin 0 auto 24px auto
+          .line
+            display inline-block
+            flex 1
+            margin auto
+            height 1px
+            background rgb(255,255,255)
+          .text
+            padding 0 12px
+            font-size 14px
+            font-weight 700
+        .supports
+          padding 0 0 28px 36px
+          .support-item
+            padding 0 6px 12px 16px
+            color white
+            .icon
+              display inline-block
+              vertical-align top
+              width 16px
+              height 16px
+              background-size 100% 100%
+              background-repeat no-repeat
+              &.decrease
+                bg-image('decrease_2')
+              &.discount
+                bg-image('discount_2')
+              &.special
+                bg-image('special_2')
+              &.invoice
+                bg-image('invoice_2')
+              &.guarantee
+                bg-image('guarantee_2')
+            .text
+              vertical-align middle
+              line-height 12px
+              font-size 12px
+              font-weight 200
+              color rgb(255,255,255)
+        .bulletin
+          padding 0 48px
+          font-size 12px
+          font-weight 200
+          color rgb(255,255,255)
+          line-height 24px
+    .detail-close
+      position relative
+      width 32px
+      height 32px
+      margin -64px auto 0 auto
+      clear both
+      font-size 32px
+      color rgba(255,255,255,.5)
+      &.fade-enter-active,&.fade-leave-active
+        transition opacity .5s
+      &.fade-enter,&.fade-leave-active
+        opacity 0

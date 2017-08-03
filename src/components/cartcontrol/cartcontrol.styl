@@ -1,0 +1,37 @@
+.cartcontrol
+  .cart-decrease
+    display inline-block
+    padding 6px
+    transition all .4s linear
+    .inner
+      line-height 24px
+      font-size 24px
+      color rgb(0,160,220)
+      transition all .4s linear
+    &.fadeRotate-enter-active, &.fadeRotate-remove-active
+      transform translate3d(0,0,0)
+      .inner
+        display inline-block
+        transform rotate(0)
+    &.fadeRotate-enter, &.fadeRotate-remove
+      opacity 0
+      transform translate3d(24px,0,0)
+      .inner
+        transform rotate(180deg)
+
+  .cart-count
+    /*设为inline-block 不设的话为display为block独占一行*/
+    display inline-block
+    vertical-align top
+    font-size 10px
+    color rgb(147,153,159)
+    line-height 24px
+    text-align center
+    padding 6px 0
+  .cart-add
+    display inline-block
+    vertical-align top
+    font-size 24px
+    color rgb(0,160,220)
+    line-height 24px
+    padding 6px

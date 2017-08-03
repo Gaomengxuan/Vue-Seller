@@ -1,0 +1,159 @@
+@import "../../common/stylus/mixin.styl";
+.shopCart
+  position fixed
+  left 0
+  bottom 0
+  width 100%
+  height 48px
+  z-index 50
+  .content
+    display flex
+    background #141d27
+    .content-left
+      flex 1
+      height 48px
+      .logo-wrapper
+        display inline-block
+        position relative
+        top -10px
+        margin 0 12px
+        padding 6px
+        vertical-align top
+        width 56px
+        height 56px
+        line-height 56px
+        border-radius 50%
+        box-sizing border-box
+        text-align center
+        background #141d27
+        .badge
+          position absolute
+          top 0
+          right 0
+          width 24px
+          height 16px
+          line-height 16px
+          font-size 9px
+          font-weight 700
+          box-shadow 0 4px 8px 0px rgba(0,0,0,.4)
+          border-radius 16px
+          text-align center
+          color white
+          background rgb(240,20,20)
+        .logo
+          width 100%
+          height 100%
+          line-height 44px
+          border-radius 50%
+          font-size 24px
+          font-weight 700
+          color #80858a
+          background #2b343c
+          &.active
+            background rgb(0,160,220)
+            color white
+      /*.icon-shopping-cart*/
+      .price
+        display inline-block
+        vertical-align top
+        font-size 16px
+        margin-top 12px
+        padding-right 12px
+        box-sizing border-box
+        color rgba(255,255,255,0.4)
+        font-weight 700
+        line-height 24px
+        border-right 1px solid rgba(255,255,255,0.1)
+      .desc
+        display inline-block
+        position relative
+        margin 12px 0 12px 0
+        vertical-align top
+        line-height 24px
+        color rgba(255,255,255,.4)
+        font-size 10px
+        font-weight 700
+
+
+    .content-right
+      flex 0 0 105px
+      line-height 48px
+      text-align center
+      font-size 12px
+      font-weight 700
+      color rgba(255,255,255,.4)
+      background #2b343c
+      &.enough
+        color white
+        background #00b43c
+
+  .shopcart-list
+    position absolute
+    top 0
+    left 0
+    width 100%
+    background white
+    transform translate3d(0,-100%,0)
+    z-index -1
+    .list-header
+      height 40px
+      line-height 40px
+      background #f3f5f7
+      border-1px(rgba(7,17,27,.1))
+      //border-bottom 1px solid rgba(7,17,27,.1)
+      .title
+        display inline-block
+        padding-left 18px
+        font-size 14px
+        font-weight 200
+        color rgb(7,17,27)
+      .empty
+        position absolute
+        right 8px
+        padding 0 10px
+        font-size 12px
+        color rgb(0,160,220)
+    .list-content
+      max-height 217px
+      overflow hidden
+      .food
+        position relative
+        display flex
+        height 48px
+        margin 0 18px
+        //border-bottom 1px solid rgba(7,17,27,.1)
+        border-1px(rgba(7,17,27,.1))
+        .name,.price
+          line-height 48px
+          font-size 14px
+          font-weight 700
+        .name
+          flex 1
+          color rgb(7,17,27)
+        .price
+          padding 0 12px 0 18px
+          color rgb(240,20,20)
+        .cartcontrol-wrapper
+          font-size 14px
+          margin-top 6px
+
+.drop-enter-active, .drop-leave-active
+  transition opacity .5s
+.drop-enter-active, .drop-leave-active
+  opacity 0
+.backdrop
+  position fixed
+  top 0
+  bottom 0
+  left 0
+  right 0
+  background rgba(7,17,27,.6)
+  backdrop-filter blur(10px)
+  z-index 40
+  &.fade-backdrop-enter-active, &.fade-backdrop-leave-active
+    opacity 1
+    transition: all 0.5s
+    background rgba(7, 17, 27, 0.6)
+  &.fade-backdrop-enter, &.fade-backdrop-leave-active
+    opacity 0
+    background rgba(7, 17, 27, 0)
