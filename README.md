@@ -28,6 +28,6 @@ npm run build --report
 
 
 ## 运行效果：
-![image](https://github.com/Gaomengxuan/Vue-Seller/tree/master/src/ScreenGif.gif)
+![image](https://github.com/leslieSie/vue-for-my-english-app/blob/master/static/show.gif)
 ## 后续
 #### 这个webapp后期会不断的拓展和升级，将会带来更好的用户体验。
